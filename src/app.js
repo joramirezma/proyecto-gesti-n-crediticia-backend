@@ -2,6 +2,8 @@ const express = require('express');
 const cors = require('cors');
 require('dotenv').config();
 
+const { authRoutes } = require('./routes');
+
 const app = express();
 
 // Middlewares
@@ -21,8 +23,8 @@ app.get('/api/health', (req, res) => {
   });
 });
 
-// Routes will be added here
-// app.use('/api/auth', authRoutes);
+// Routes
+app.use('/api/auth', authRoutes);
 
 // 404 Handler
 app.use((req, res) => {
