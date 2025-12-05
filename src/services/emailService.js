@@ -55,7 +55,7 @@ const sendPasswordResetEmail = async (to, resetToken, userName) => {
             <p>Hemos recibido una solicitud para restablecer la contraseña de tu cuenta.</p>
             <p>Haz clic en el siguiente botón para crear una nueva contraseña:</p>
             <p style="text-align: center;">
-              <a href="${resetLink}" class="button">Restablecer Contraseña</a>
+              <a href="${resetLink}" class="button" style="color: white;">Restablecer Contraseña</a>
             </p>
             <div class="warning">
               <strong>⚠️ Importante:</strong> Este enlace expirará en 1 hora.
